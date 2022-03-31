@@ -1,0 +1,49 @@
+1. git clone url
+2. cd <git_repo>
+3. git checkout <branchname>		 (-b will create a new branc)
+4. git pull
+5. git push
+
+porcelain commands are the high level commands that we use all the time. They can be changed or added to with time (So they are fragile).
+Plumbing commands are the low level commands that almost never change 
+git init				initiate/ create a new repository in the current directory. An initial branch with no commits is created
+
+git version				return git version
+
+git config -global user.name "name"	set author name and email to be used with commits
+git config -global user.email "email"
+
+git branch				shows all local branch refs
+git branch <branchname>			make new banch
+git branch -d <branchname>		delete branch
+
+git checkout <branchname>		switch to existing branch
+git checkout -b <branchname>		create new branch (if it doesn't exist) and switch to it
+
+git log					shows the commit history
+
+git status				displays state of working directory and staging area - shows changed files (both staged and unstaged), and current branch
+
+git add .				add changes to directory to staging area
+					"add ." is add all, a specific file(s) can be given instead
+
+git commit -m "commit messge"		commit (save) all staged changes to the local repository along with a message describing the changes
+
+git push				updates remote repository with commited changes
+
+git pull				update/integrates local repository to mactch the remote repository
+					necessary if other people have updated a repository while you've been working on it to avoid merge conflicts.
+
+git fetch				like a safe git pull, it downloads content from the remote repo but does not immediately merge it with the local repo
+
+git merge <branchname>			merge a branch into the branch you are currently on
+
+git reset "filename"			unstages a file
+git reset "commit"			undoes all commits to the local repo after specified commit
+
+git rm "filename"			delete file and stage the deletion
+
+git clone "url"				clone remote repo into directory
+
+git remote add origin "Url"		commit local repo to remote repo (never seems to work properly)
+
