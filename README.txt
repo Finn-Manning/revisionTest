@@ -1,5 +1,5 @@
 Hiya,
 
-Glad you could be here. I means a lot.
+Glad you could be here. It means a lot.
 
 Finn
